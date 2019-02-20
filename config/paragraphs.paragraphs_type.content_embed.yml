@@ -1,9 +1,0 @@
-uuid: afe485bd-6281-440e-9863-c5598996e88e
-langcode: en
-status: true
-dependencies: {  }
-id: content_embed
-label: 'Content embed'
-icon_uuid: null
-description: 'Content embed component allows for adding WYSIWYG text to a page.'
-behavior_plugins: {  }
