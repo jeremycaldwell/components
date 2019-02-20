@@ -92,7 +92,7 @@ With our Drupal 8 instance now configured we need to import the database.  Locat
 
 ```
   cd db
-  lando db-import components.sql.qz
+  lando db-import components.sql.gz
 ```
 
 Our database is now imported and all that is left to do is to configure our theme and scaffold up our Pattern Lab instance and compile the Sass files need for our theme.  We can easily do that by entering the following command within the terminal window..
