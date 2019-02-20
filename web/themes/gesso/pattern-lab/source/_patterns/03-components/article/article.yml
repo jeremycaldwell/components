@@ -1,13 +1,5 @@
 ---
-attributes:
-  Attribute():
-    role: "article"
-    class:
-      -
-title:
-  join():
-    - include():
-        pattern: components-page-title
+article_page_title: 'Article Title'
 has_footer: true
 footer:
   join():

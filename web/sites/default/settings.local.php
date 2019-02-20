@@ -67,23 +67,27 @@ $settings['cache']['bins']['render'] = 'cache.backend.null';
  */
 $settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
 
-// Lando database settings
-// $databases['default']['default'] = array (
-//   'database' => 'drupal8',
-//   'username' => 'drupal8',
-//   'password' => 'drupal8',
-//   'prefix' => '',
-//   'host' => 'database',
-//   'port' => '3306',
-//   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-//   'driver' => 'mysql',
-// );
-
 /**
  * Trusted host configuration.
  *
  */
 $settings['trusted_host_patterns'] = array(
   '^components\.lndo\.site$',
-  '^components\.dd$'
 );
+
+/**
+ * Database settings:
+ *
+ * The $databases array specifies the database connection or connections that
+ * Drupal may use.  This setting should change based on the environment.
+ */
+ $databases['default']['default'] = array (
+   'database' => 'pantheon',
+   'username' => 'pantheon',
+   'password' => 'pantheon',
+   'prefix' => '',
+   'host' => 'database',
+   'port' => '3306',
+   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+   'driver' => 'mysql',
+ );

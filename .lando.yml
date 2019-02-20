@@ -1,7 +1,4 @@
 name: components
-recipe: drupal8
+recipe: pantheon
 config:
-  php: '7.1'
-  via: nginx
-  webroot: web
-  drush: composer
+  framework: drupal8

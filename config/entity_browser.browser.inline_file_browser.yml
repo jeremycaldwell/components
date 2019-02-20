@@ -1,0 +1,31 @@
+uuid: 1829cf90-b821-4c67-be6b-ac384ed29f20
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.file_browser
+  module:
+    - views
+name: inline_file_browser
+label: 'Inline File Browser'
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Select file'
+  auto_open: true
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  3415e134-2cb1-4ca4-a027-37d44e81c833:
+    settings:
+      view: file_browser
+      view_display: file_browser
+      submit_text: 'Add media'
+      auto_select: false
+    uuid: 3415e134-2cb1-4ca4-a027-37d44e81c833
+    weight: 1
+    label: Files
+    id: view

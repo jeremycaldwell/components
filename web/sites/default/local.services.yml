@@ -10,6 +10,7 @@ services:
 #
 #
 parameters:
+  http.response.debug_cacheability_headers: false
   twig.config:
     debug: true
     auto_reload: true

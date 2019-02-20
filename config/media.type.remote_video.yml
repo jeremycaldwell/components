@@ -1,0 +1,15 @@
+uuid: e9da5a93-3d3a-4efe-b7c8-e19a60843974
+langcode: en
+status: true
+dependencies:
+  module:
+    - video_embed_media
+id: remote_video
+label: 'Remote Video'
+description: 'Remote video hosted on YouTube or Vimeo.'
+source: video_embed_field
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_video_embed_field
+field_map: {  }

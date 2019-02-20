@@ -1,0 +1,31 @@
+uuid: 30b2bdce-864a-4913-a32f-e6364b66367e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.audio_browser
+  module:
+    - views
+name: inline_audio_browser
+label: 'Inline Audio Browser'
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Select audio'
+  auto_open: true
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  65722ef1-af65-4329-9dba-6a4f1273c4fd:
+    settings:
+      view: audio_browser
+      view_display: audio_browser
+      submit_text: 'Add media'
+      auto_select: false
+    uuid: 65722ef1-af65-4329-9dba-6a4f1273c4fd
+    weight: 1
+    label: Audio
+    id: view

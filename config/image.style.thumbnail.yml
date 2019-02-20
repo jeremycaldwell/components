@@ -1,0 +1,19 @@
+uuid: b3a1d09d-e46f-4e38-a173-72880c1d786a
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: cCiWdBHgLwj5omG35lsKc4LkW4MBdmcctkVop4ol5x0
+name: thumbnail
+label: 'Thumbnail (100×100)'
+effects:
+  66d2bcf0-e251-4d21-9fdf-0d3d8b68ee8f:
+    uuid: 66d2bcf0-e251-4d21-9fdf-0d3d8b68ee8f
+    id: focal_point_scale_and_crop
+    weight: -10
+    data:
+      width: 100
+      height: 100
+      crop_type: focal_point

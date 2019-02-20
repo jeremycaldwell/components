@@ -1,0 +1,29 @@
+uuid: d9c4cf34-df9a-41eb-98f4-c7037053125f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_content
+    - node.type.landing
+  module:
+    - entity_reference_revisions
+id: node.landing.field_page_content
+field_name: field_page_content
+entity_type: node
+bundle: landing
+label: 'Page content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+    target_bundles_drag_drop:
+      content_embed:
+        weight: 2
+        enabled: false
+field_type: entity_reference_revisions
