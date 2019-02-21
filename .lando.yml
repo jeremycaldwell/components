@@ -17,6 +17,3 @@ tooling:
   grunt:
     service: appserver
     cmd: cd /app/web/themes/gesso && grunt
-  drush:
-    service: appserver
-    cmd: drush --root=/app/web
