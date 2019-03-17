@@ -1,8 +1,8 @@
 ---
-menu_name: "submenu"
+menu_name: submenu
 items:
 - title: Menu item one
-  url: "#"
+  url: '#'
   original_link:
     options:
       attributes:
@@ -10,7 +10,7 @@ items:
           class:
             -
 - title: Menu item two
-  url: "#"
+  url: '#'
   original_link:
     options:
       attributes:
@@ -19,7 +19,7 @@ items:
             -
   below:
   - title: Submenu item one
-    url: "#"
+    url: '#'
     original_link:
       options:
         attributes:
@@ -27,7 +27,7 @@ items:
             class:
               -
   - title: Submenu item two
-    url: "#"
+    url: '#'
     original_link:
       options:
         attributes:
@@ -35,7 +35,7 @@ items:
             class:
               -
   - title: Submenu item three
-    url: "#"
+    url: '#'
     original_link:
       options:
         attributes:

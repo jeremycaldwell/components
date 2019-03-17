@@ -1,29 +1,30 @@
 // @file
 // Styles for list.
 
-.list {}
+.list {
+}
 
 // List pipeline
 .list--pipeline {
-  @include list-pipeline();
+  @include list-pipeline;
 }
 
 // List inline
 .list--inline {
-  @include list-inline();
+  @include list-inline;
 }
 
 // List column
 .list--column {
-  @include list-column();
+  @include list-column;
 }
 
 // List clean
 .list--clean {
-  @include list-clean();
+  @include list-clean;
 }
 
 // List border
 .list--border {
-  @include list-border();
+  @include list-border;
 }

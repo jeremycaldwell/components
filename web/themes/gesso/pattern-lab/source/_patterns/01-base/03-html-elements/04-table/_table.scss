@@ -5,9 +5,11 @@ caption {
   @extend %body-font-small;
 }
 
-col {}
+col {
+}
 
-colgroup {}
+colgroup {
+}
 
 table {
   border-collapse: collapse;
@@ -16,7 +18,8 @@ table {
   min-width: 100%;
 }
 
-tbody {}
+tbody {
+}
 
 td {
   background-color: $color-background-table-primary;

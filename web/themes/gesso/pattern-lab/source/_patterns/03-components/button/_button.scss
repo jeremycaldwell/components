@@ -3,7 +3,7 @@
 
 .button {
   @extend %button-font;
-  @include button();
+  @include button;
   margin: 0 0 rem($spacing-scale-level-2);
 
   & + & {

@@ -1,7 +1,7 @@
 ---
-title:
-title_element: h3
-has_wrapper: true
+title: ''
+heading: h3
+wrapper: true
 element: div
 rows:
 - content:

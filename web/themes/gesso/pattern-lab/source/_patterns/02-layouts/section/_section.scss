@@ -2,5 +2,15 @@
 // Styles for Section Layout.
 
 .l-section {
-  margin-bottom: 2em;
+  @include responsive-margin($spacing-responsive-large, bottom);
+}
+
+.l-section__title {
+}
+
+.l-section__content {
+}
+
+.l-section__postscript {
+  @include responsive-margin($spacing-responsive-small, top);
 }

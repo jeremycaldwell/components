@@ -560,6 +560,8 @@ fieldset {
 input {
   line-height: normal; }
 
+/* stylelint-disable selector-no-qualifying-type */
+/* stylelint-enable */
 legend {
   border: 0;
   -webkit-box-sizing: border-box;
@@ -602,6 +604,9 @@ svg:not(:root) {
   overflow: hidden; }
 
 /* generated with grunt-sass-globbing */
+.block {
+  margin-bottom: 2rem; }
+
 .l-constrain {
   margin-left: auto;
   margin-right: auto;
@@ -959,84 +964,84 @@ svg:not(:root) {
       -ms-flex-order: 1;
           order: 1; }
 
-.l-navigation {
-  display: none; }
-  @media (min-width: 43.75em) {
-    .l-navigation {
-      display: block; } }
+.l-page {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto auto auto; }
+  .l-page .l-main {
+    min-width: 0; }
+
+.l-header__inner {
+  background: #fff; }
+
+.l-header__content {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .l-section {
-  margin-bottom: 2em; }
+  margin-bottom: 2rem; }
 
-@media (min-width: 56.25em) {
-  .l-sidebar {
+.l-section__postscript {
+  margin-top: 1rem; }
+
+.l-sidebar__header {
+  position: relative; }
+
+@media (min-width: 50em) {
+  .l-sidebar__grid {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-    .l-sidebar > * {
+        flex-wrap: wrap; } }
+
+@media (min-width: 50em) {
+  .l-sidebar__aside {
+    -ms-flex-preferred-size: 300px;
+        flex-basis: 300px;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    margin-right: 2rem;
+    max-width: 300px;
+    width: 300px; }
+    .l-sidebar--right .l-sidebar__aside {
+      margin-left: 2rem;
+      margin-right: 0;
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; } }
+
+.l-sidebar__main {
+  max-width: 100%;
+  position: relative; }
+  @media (min-width: 50em) {
+    .l-sidebar__main {
       -ms-flex-preferred-size: calc(100% - 300px - 2rem);
           flex-basis: calc(100% - 300px - 2rem);
       -webkit-box-flex: 1;
           -ms-flex-positive: 1;
               flex-grow: 1;
-      -ms-flex-negative: 1;
-          flex-shrink: 1;
-      margin-right: 1rem; }
-      .l-sidebar > *:last-child {
-        margin-right: 0; }
-    .l-sidebar .l-sidebar__full {
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%;
-      -webkit-box-flex: 1;
-          -ms-flex-positive: 1;
-              flex-grow: 1;
-      -ms-flex-negative: 1;
-          flex-shrink: 1;
-      margin-right: 0; }
-    .l-sidebar .l-sidebar__sidebar {
-      -ms-flex-preferred-size: 300px;
-          flex-basis: 300px;
-      -webkit-box-flex: 1;
-          -ms-flex-positive: 1;
-              flex-grow: 1;
       -ms-flex-negative: 0;
-          flex-shrink: 0; }
-    @supports (display: grid) {
-      .l-sidebar {
-        display: grid;
-        grid-gap: 1rem;
-        grid-template-columns: 1fr 300px; }
-        .l-sidebar .l-sidebar__full {
-          grid-column: span 2; } } }
-
-@media (min-width: 56.25em) {
-  .l-sidebar--multi-2 > * {
-    -ms-flex-preferred-size: calc(100% - 600px - 3rem);
-        flex-basis: calc(100% - 600px - 3rem);
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    -ms-flex-negative: 1;
-        flex-shrink: 1; }
-  @supports (display: grid) {
-    .l-sidebar--multi-2 {
-      grid-template-columns: 300px 1fr 300px; }
-      .l-sidebar--multi-2 .l-sidebar__full {
-        grid-column: span 3; } } }
+          flex-shrink: 0;
+      max-width: 100%;
+      width: calc(100% - 300px - 2rem); } }
 
 /* generated with grunt-sass-globbing */
+/* stylelint-disable-next-line selector-no-qualifying-type */
 ul.toolbar-menu {
   font-size: 1em; }
   ul.toolbar-menu li {
     margin-bottom: 0; }
-
-.article footer {
-  padding-bottom: 1rem; }
-
-.block {
-  margin-bottom: 2em; }
 
 .breadcrumb {
   margin: 1.5rem 0; }
@@ -1188,9 +1193,6 @@ ul.toolbar-menu {
 
 .card__footer {
   margin-top: auto; }
-
-.date {
-  font-weight: 700; }
 
 details.details {
   margin: 0 0 1.5rem; }
@@ -1783,16 +1785,25 @@ details.details {
   .form-item--select .form-item__select::-ms-expand {
     display: none; }
 
-.hero-bg-image {
+.hero {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-position: 50% 50%;
   background-size: cover;
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 4em 1em;
   text-align: center; }
-  .hero-bg-image.has-overlay {
+  .hero.has-overlay {
     z-index: 0;
     position: relative; }
-    .hero-bg-image.has-overlay::after {
+    .hero.has-overlay::after {
       z-index: 1;
       background: rgba(0, 0, 0, 0.5);
       bottom: 0;
@@ -1801,47 +1812,15 @@ details.details {
       position: absolute;
       right: 0;
       top: 0; }
-    .hero-bg-image.has-overlay .hero-bg-image__content {
+    .hero.has-overlay .hero__content {
       z-index: 2;
       position: relative; }
 
-.hero-bg-image__title {
+.hero__title {
   margin-bottom: 0.25em; }
 
-.hero-inline-image {
-  color: #fff;
-  padding: 0;
-  position: relative;
-  text-align: center; }
-  .hero-inline-image.has-overlay {
-    z-index: 0; }
-    .hero-inline-image.has-overlay::after {
-      z-index: 1;
-      background: rgba(0, 0, 0, 0.5);
-      bottom: 0;
-      content: '';
-      left: 0;
-      position: absolute;
-      right: 0;
-      top: 0; }
-    .hero-inline-image.has-overlay .hero-inline-image__content {
-      z-index: 2; }
-
-.hero-inline-image__title {
-  margin-bottom: 0.25em; }
-
-.hero-inline-image__picture {
-  display: block;
-  line-height: 0; }
-  .hero-inline-image__picture img, .hero-inline-image__picture picture {
-    width: 100%; }
-
-.hero-inline-image__content {
-  background: rgba(0, 0, 0, 0.5);
-  bottom: 5%;
-  padding: 1em;
-  position: absolute;
-  right: 5%; }
+.hero--fullscreen {
+  height: 100vh; }
 
 .list--pipeline {
   list-style-type: none;

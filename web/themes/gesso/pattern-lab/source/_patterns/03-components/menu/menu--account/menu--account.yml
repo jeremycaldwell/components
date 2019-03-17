@@ -1,8 +1,8 @@
 ---
-menu_name: "account"
+menu_name: account
 items:
 - title: My Account
-  url: "#"
+  url: '#'
   original_link:
     options:
       attributes:
@@ -10,7 +10,7 @@ items:
           class:
             -
 - title: Logout
-  url: "#"
+  url: '#'
   original_link:
     options:
       attributes:

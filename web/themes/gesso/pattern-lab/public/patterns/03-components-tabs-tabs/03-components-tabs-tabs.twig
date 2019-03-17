@@ -1,5 +1,5 @@
 {% if tabs %}
-  <nav class="tabs {{ modifier_classes }}" role="navigation">
+  <nav class="tabs {{ modifier }}" role="navigation">
     <h2 class="visually-hidden">{{ heading|default('Primary tabs'|raw|t) }}</h2>
     <ul class="tabs__items">
     {% for tab in tabs %}

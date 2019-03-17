@@ -1,8 +1,8 @@
 ---
-menu_name: "main"
+menu_name: main
 items:
 - title: Home
-  url: "#"
+  url: '#'
   original_link:
     options:
       attributes:
@@ -10,7 +10,7 @@ items:
           class:
             -
 - title: About
-  url: "#"
+  url: '#'
   original_link:
     options:
       attributes:
@@ -18,7 +18,7 @@ items:
           class:
             -
 - title: Contact
-  url: "#"
+  url: '#'
   original_link:
     options:
       attributes:
@@ -26,7 +26,7 @@ items:
           class:
             -
 - title: Search
-  url: "#"
+  url: '#'
   original_link:
     options:
       attributes:

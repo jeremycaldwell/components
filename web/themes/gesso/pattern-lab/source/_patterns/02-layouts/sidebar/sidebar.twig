@@ -1,31 +1,43 @@
-<div class="l-sidebar{{ has_multiple_sidebar ? ' l-sidebar--multi-2' }} {{ modifier_classes }}">
+<div class="l-sidebar {{ modifier }}">
 
-  {% if has_header %}
-    <div class="l-sidebar__full">
-      {% block sidebar_header %}
-        {{ sidebar_header_content|raw }}
+  {% if header %}
+    <div class="l-sidebar__header">
+      {% block header %}
+        {{ header|raw }}
       {% endblock %}
     </div>
   {% endif %}
 
-   {% if has_multiple_sidebar %}
-    <aside class="l-sidebar__sidebar">
-      {% block sidebar_minor %}
-        {{ sidebar_minor_content|raw }}
-      {% endblock %}
-    </aside>
+  {% if constrain %}
+    <div class="{{ constrain }}">
   {% endif %}
 
-    <div class="l-sidebar__main">
-      {% block sidebar_main %}
-        {{ sidebar_main_content|raw }}
+      <div class="l-sidebar__grid">
+        {% if aside %}
+          <aside class="l-sidebar__aside">
+            {% block aside %}
+              {{ aside|raw }}
+            {% endblock %}
+          </aside>
+        {% endif %}
+
+        <div class="l-sidebar__main">
+          {% block main %}
+            {{ main|raw }}
+          {% endblock %}
+        </div>
+      </div>
+
+  {% if constrain %}
+    </div>
+  {% endif %}
+
+  {% if footer %}
+    <div class="l-sidebar__footer">
+      {% block footer %}
+        {{ footer|raw }}
       {% endblock %}
     </div>
-
-    <aside class="l-sidebar__sidebar">
-      {% block sidebar_aside %}
-        {{ sidebar_aside_content|raw }}
-      {% endblock %}
-    </aside>
+  {% endif %}
 
 </div>

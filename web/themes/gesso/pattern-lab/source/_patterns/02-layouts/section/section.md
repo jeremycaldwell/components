@@ -5,8 +5,9 @@ title: Section
 _Layout for Section_.
 
 ### Variables:
-* has_constrain: [boolean] True/False whether to add a constraint to block.
-* constrain_classes: [string] Constrain classes used to control layout.
-* section_title_element: [string] HTML element to use for block label.
-* section_title: [string] The configured label of the block if visible.
-* section_content:  The content of this block.
+* modifier: [boolean] Modifier classes used to modify section element.
+* constrain: [string] Constrain classes used to control layout.
+* heading: [string] HTML element to use for Heading element.
+* title: [string] The title of the section.
+* content: [string] The content of the section.
+* postscript: [string] The postscript of the section.

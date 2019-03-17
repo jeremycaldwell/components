@@ -1,0 +1,18 @@
+<div class="hero {{ modifier }}" style="background-image: url({{ image|raw }});" role="img" aria-label="{{ image_alt|raw }}">
+  <div class="hero__content">
+    {% if title %}
+      <h1 class="hero__title">{{ title|raw }}</h1>
+    {% endif %}
+    {% if subtitle %}
+      <h3 class="hero__subtitle">{{ subtitle|raw }}</h3>
+    {% endif %}
+    {% if teaser %}
+      <div class="hero__teaser">{{ teaser|raw }}</div>
+    {% endif %}
+    {% if button %}
+      <div class="hero__button">
+        {{ button|raw }}
+      </div>
+    {% endif %}
+  </div>
+</div>

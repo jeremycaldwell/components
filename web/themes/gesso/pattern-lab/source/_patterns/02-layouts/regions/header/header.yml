@@ -3,3 +3,5 @@ content:
   join():
     - include():
         pattern: components-site-name
+    - include():
+        pattern: components-menu--main

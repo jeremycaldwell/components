@@ -30,11 +30,14 @@ b {
   @include display-font-weight-bold;
 }
 
-cite {}
+cite {
+}
 
-code {}
+code {
+}
 
-del {}
+del {
+}
 
 dfn {
   font-style: italic;
@@ -48,26 +51,32 @@ i {
   font-style: italic;
 }
 
-ins {}
+ins {
+}
 
-kbd {}
+kbd {
+}
 
 mark {
   background: #ff0;
   color: #000;
 }
 
-q {}
+q {
+}
 
-s {}
+s {
+}
 
-samp {}
+samp {
+}
 
 small {
   @extend %body-font-small;
 }
 
-strong {}
+strong {
+}
 
 sub {
   bottom: -0.25em;
@@ -77,8 +86,11 @@ sup {
   top: -0.5em;
 }
 
-time {}
+time {
+}
 
-u {}
+u {
+}
 
-var {}
+var {
+}

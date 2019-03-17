@@ -14,6 +14,7 @@
 #viewall-base-html-elements,
 #viewall-layouts-constrain,
 #viewall-components-cms-styles {
+  /* stylelint-enable */
   display: none; }
 
 .sg-subtype h2 {
@@ -203,15 +204,15 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  padding: 20px 0 20px 0;
+  padding: 20px 0;
   text-align: center;
   width: 100%; }
   @media (min-width: 50em) {
     .pattern-lab-font__preview {
-      border-bottom: none;
+      border-bottom: 0;
       border-right: 2px solid #eee;
       margin: 5px 30px 0 0;
-      padding: 0 20px 0 20px;
+      padding: 0 20px;
       text-align: left;
       width: 65%; } }
 

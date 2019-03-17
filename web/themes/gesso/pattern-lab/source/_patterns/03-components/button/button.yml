@@ -1,6 +1,6 @@
 ---
-modifier_classes: ""
-is_button_tag: false
-is_disabled: false
-url: "#"
-text: "Button Text"
+modifier: ''
+button: false
+disabled: false
+url: '#'
+text: Button Text

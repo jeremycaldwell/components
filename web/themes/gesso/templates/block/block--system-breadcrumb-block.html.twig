@@ -6,11 +6,11 @@
 
 {% set attributes = attributes.addClass(classes) %}
 
-{% embed '@components/block/block.twig' with {
-  'hide_wrapper': true,
-  'has_constrain': false,
-  'hide_content_wrapper': true,
-  'label': false
+{% embed '@layouts/block/block.twig' with {
+  'wrapper': true,
+  'constrain': false,
+  'content_wrapper': true,
+  'title': false
 } %}
 
   {% block content %}

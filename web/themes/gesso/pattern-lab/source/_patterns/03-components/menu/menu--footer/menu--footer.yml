@@ -1,8 +1,8 @@
 ---
-menu_name: "footer"
+menu_name: footer
 items:
 - title: Footer Link 1
-  url: "#"
+  url: '#'
   original_link:
     options:
       attributes:
@@ -10,7 +10,7 @@ items:
           class:
             -
 - title: Footer Link 2
-  url: "#"
+  url: '#'
   original_link:
     options:
       attributes:
@@ -18,7 +18,7 @@ items:
           class:
             -
 - title: Footer Link 3
-  url: "#"
+  url: '#'
   original_link:
     options:
       attributes:
@@ -26,7 +26,7 @@ items:
           class:
             -
 - title: Footer Link 4
-  url: "#"
+  url: '#'
   original_link:
     options:
       attributes:
