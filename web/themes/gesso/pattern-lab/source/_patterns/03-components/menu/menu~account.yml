@@ -1,7 +1,7 @@
 ---
-menu_name: ''
+menu_name: account
 items:
-  - title: Link 1
+  - title: My Account
     url: '#'
     original_link:
       options:
@@ -10,7 +10,7 @@ items:
             class:
               -
     in_active_trail: false
-  - title: Link 2
+  - title: Logout
     url: '#'
     original_link:
       options:

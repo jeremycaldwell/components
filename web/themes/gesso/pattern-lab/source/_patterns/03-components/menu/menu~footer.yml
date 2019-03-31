@@ -1,24 +1,7 @@
 ---
-menu_name: submenu
+menu_name: footer
 items:
-- title: Menu item one
-  url: '#'
-  original_link:
-    options:
-      attributes:
-        Attribute():
-          class:
-            -
-- title: Menu item two
-  url: '#'
-  original_link:
-    options:
-      attributes:
-        Attribute():
-          class:
-            -
-  below:
-  - title: Submenu item one
+  - title: Footer Link 1
     url: '#'
     original_link:
       options:
@@ -26,7 +9,8 @@ items:
           Attribute():
             class:
               -
-  - title: Submenu item two
+    in_active_trail: false
+  - title: Footer Link 2
     url: '#'
     original_link:
       options:
@@ -34,7 +18,8 @@ items:
           Attribute():
             class:
               -
-  - title: Submenu item three
+    in_active_trail: false
+  - title: Footer Link 3
     url: '#'
     original_link:
       options:
@@ -42,3 +27,13 @@ items:
           Attribute():
             class:
               -
+    in_active_trail: false
+  - title: Footer Link 4
+    url: '#'
+    original_link:
+      options:
+        attributes:
+          Attribute():
+            class:
+              -
+    in_active_trail: false

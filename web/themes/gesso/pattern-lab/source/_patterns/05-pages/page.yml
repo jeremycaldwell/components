@@ -17,4 +17,7 @@ main:
                   with:
                     constrain: false
                     title: false
-                    content: "Page Content"
+                    content:
+                      join():
+                        - include():
+                            pattern: components-call-to-action
