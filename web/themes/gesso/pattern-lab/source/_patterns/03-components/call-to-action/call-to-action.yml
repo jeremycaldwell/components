@@ -1,8 +1,0 @@
----
-title: Check this out!
-button:
-  join():
-    - include():
-        pattern: components-button
-        with:
-          text: Action
