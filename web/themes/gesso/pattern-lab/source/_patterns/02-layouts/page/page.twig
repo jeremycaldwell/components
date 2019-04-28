@@ -1,23 +1,23 @@
 <div class="l-page {{ modifier }}">
   {% block header %}
-    {{ header|raw }}
+    {{ header }}
   {% endblock %}
 
   <main id="main" class="l-main" role="main" tabindex="-1">
     {% block breadcrumb %}
-      {{ breadcrumb|raw }}
+      {{ breadcrumb }}
     {% endblock %}
 
     {% block main %}
-      {{ main|raw }}
+      {{ main }}
     {% endblock %}
   </main>
 
   {% block footer %}
-    {{ footer|raw }}
+    {{ footer }}
   {% endblock %}
 
   {% block modal %}
-    {{ modal|raw }}
+    {{ modal }}
   {% endblock %}
 </div>

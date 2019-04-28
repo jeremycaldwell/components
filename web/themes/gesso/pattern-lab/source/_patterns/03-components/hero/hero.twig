@@ -1,17 +1,17 @@
-<div class="hero {{ modifier }}" style="background-image: url({{ image|raw }});" role="img" aria-label="{{ image_alt|raw }}">
+<div class="hero {{ modifier }}" style="background-image: url({{ image }});" role="img" aria-label="{{ image_alt }}">
   <div class="hero__content">
     {% if title %}
-      <h1 class="hero__title">{{ title|raw }}</h1>
+      <h1 class="hero__title">{{ title }}</h1>
     {% endif %}
     {% if subtitle %}
-      <h3 class="hero__subtitle">{{ subtitle|raw }}</h3>
+      <h3 class="hero__subtitle">{{ subtitle }}</h3>
     {% endif %}
     {% if teaser %}
-      <div class="hero__teaser">{{ teaser|raw }}</div>
+      <div class="hero__teaser">{{ teaser }}</div>
     {% endif %}
     {% if button %}
       <div class="hero__button">
-        {{ button|raw }}
+        {{ button }}
       </div>
     {% endif %}
   </div>

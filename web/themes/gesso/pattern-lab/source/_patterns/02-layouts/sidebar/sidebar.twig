@@ -3,7 +3,7 @@
   {% if header %}
     <div class="l-sidebar__header">
       {% block header %}
-        {{ header|raw }}
+        {{ header }}
       {% endblock %}
     </div>
   {% endif %}
@@ -16,14 +16,14 @@
         {% if aside %}
           <aside class="l-sidebar__aside">
             {% block aside %}
-              {{ aside|raw }}
+              {{ aside }}
             {% endblock %}
           </aside>
         {% endif %}
 
         <div class="l-sidebar__main">
           {% block main %}
-            {{ main|raw }}
+            {{ main }}
           {% endblock %}
         </div>
       </div>
@@ -35,7 +35,7 @@
   {% if footer %}
     <div class="l-sidebar__footer">
       {% block footer %}
-        {{ footer|raw }}
+        {{ footer }}
       {% endblock %}
     </div>
   {% endif %}
