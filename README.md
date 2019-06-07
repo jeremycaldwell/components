@@ -11,7 +11,7 @@ Below is a list of requirements that will ensure you get the most out of the tra
 - Terminal
 - Composer
 - Node & NPM
-- Grunt
+- Gulp
 - Git
 
 ### Administrative rights
@@ -36,28 +36,12 @@ Composer (https://getcomposer.org/) is a dependency manager for PHP that allows 
 
 > We will be using NPM to manage dependencies when working with themes in Drupal 8.
 
-We can install `Node JS` and `NPM` globally by following the directions on the [download](https://nodejs.org/en/download/) page and selecting `8.11.4 LTS` installer for your current operating system.  Installing `Node JS` will automatically install `NPM` as well.
+`Lando` will allow us to run these commands without the need to physically install `NPM` on our computer or laptop.  We will revisit the various `NPM` commands that will be used during the training.
 
-We can validate that both are installed by running the following commands in the terminal window:
+### Gulp
+[Gulp](https://gulpjs.com/) is a JavaScript task runner that allows us to perform repetitive tasks like minification, compilation, unit testing, linting and more. We use `Gulp` to compile Sass, Pattern Lab and watch for file changes during development.
 
-```
-  node -v
-  npm -v
-```
-
-> Your terminal should be displaying **v8.11.4** for Node and **5.6.0** for NPM
-
-### Grunt
-[Grunt](https://gruntjs.com/) is a JavaScript task runner that allows us to perform repetitive tasks like minification, compilation, unit testing, linting and more. We use `Grunt` to compile Sass, Pattern Lab and watch for file changes during development.
-
-We can use `npm` to globally install `grunt` by using the following command in the terminal window:
-
-```
-  sudo npm install -g grunt-cli
-```
-
-> Windows users should omit "sudo ", and may need to run the command-line with elevated privileges
-
+`Lando` will allow us to run these commands without the need to physically install `Gulp` on our computer or laptop.  We will revisit the various `Gulp` commands that will be used during the training.
 
 ## Using the training files and configuring Drupal
 
@@ -100,8 +84,8 @@ Our database is now imported and all that is left to do is to configure our them
 ```
   cd ..
   cd web/themes/gesso
-  npm install
-  grunt
+  lando npm install
+  lando gulp watch
 ```
 
 Now that our theme is no installed and configured we can preview our Drupal 8 website by either selecting the URL within the terminal window or by opening a browser and navigating to http://components.lndo.site/user and logging in with the following credentials:
