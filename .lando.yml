@@ -8,12 +8,12 @@ services:
     run_as_root:
       - curl -sL https://deb.nodesource.com/setup_10.x | bash -
       - apt-get install -y nodejs
-      - npm install -g grunt grunt-cli
+      - npm install -global gulp-cli
 
 tooling:
   npm:
     service: appserver
     cmd: cd /app/web/themes/gesso && npm
-  grunt:
+  gulp:
     service: appserver
-    cmd: cd /app/web/themes/gesso && grunt
+    cmd: cd /app/web/themes/gesso && gulp
