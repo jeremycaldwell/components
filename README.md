@@ -83,7 +83,7 @@ Our database is now imported and all that is left to do is to configure our them
 
 ```
   cd ..
-  cd web/themes/gesso
+  cd web/themes/copycat
   lando npm install
   lando gulp watch
 ```
