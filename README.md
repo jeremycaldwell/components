@@ -85,7 +85,7 @@ Our database is now imported and all that is left to do is to configure our them
   cd ..
   cd web/themes/copycat
   lando npm install
-  lando gulp watch
+  lando gulp
 ```
 
 Now that our theme is no installed and configured we can preview our Drupal 8 website by either selecting the URL within the terminal window or by opening a browser and navigating to http://components.lndo.site/user and logging in with the following credentials:
