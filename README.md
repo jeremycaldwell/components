@@ -24,7 +24,7 @@ To eliminate the need for various setups that may involve different AMP (Apache/
 ### Terminal
 The terminal is an interface in which we can execute text based commands.  It can be much faster to complete some tasks using a Terminal than with graphical applications and menus. The remaining requirements will be mostly ran from a Terminal using a series of command line prompts.  Take a moment to ensure that you have a Terminal (MAC) or Command Prompt (Windows) available to use.
 
-We will be using the terminal window to work with tools such as `Composer`, `NPM`, and `Grunt` throughout the training.  It is important to be comfortable using the command line as it should be part of any daily Front End development workflow.
+We will be using the terminal window to work with tools such as `Composer`, `NPM`, and `Gulp` throughout the training.  It is important to be comfortable using the command line as it should be part of any daily Front End development workflow.
 
 ### Composer
 Composer (https://getcomposer.org/) is a dependency manager for PHP that allows us to perform a multitude of tasks; everything from creating a Drupal project to declaring libraries and even installing contributed modules. The advantage of using Composer is that it allows us to quickly install and update dependencies by simply running a few commands from a terminal window.
@@ -48,7 +48,21 @@ Composer (https://getcomposer.org/) is a dependency manager for PHP that allows 
 ### Downloading the training files
 Now that we have all the necessary requirements out of the way we can proceed to downloading a copy of the training files located within the Master branch.
 
-Begin by locating the green `Clone or download` drop-down button and choosing **Download ZIP**.  Locate the zipped file named `components-master.zip` and extract it's contents. Make sure to expand the `components-master.zip` folder and rename the `components-master` folder to `components`.  For sake of demonstration, I will be copying this folder to a directory called **Sandbox**.
+Begin by locating the green `Clone or download` drop-down button and either choose **Download ZIP**.  Locate the zipped file named `components-master.zip` and extract it's contents. Make sure to expand the `components-master.zip` folder and rename the `components-master` folder to `components`.  For sake of demonstration, I will be copying this folder to a directory called **Sandbox**.
+
+OR
+
+Clone the repository to your computer by locating the green `Clone or download` drop-down button and copy the Clone with SSH path and run the following command in your terminal window.
+
+```
+  git clone git@github.com:chazchumley/components.git
+```
+If you have chosen to clone the repository please make sure to remove the git origin remote as we will not be pushing any updates back up to the repository.  You can do this by entering the following command in your terminal window.
+
+```
+  git remote remove origin
+```
+
 
 ### Lando
 
@@ -65,24 +79,17 @@ The initial setup of Lando requires a .lando configuration file which I have alr
   lando start
 ```
 
-Once Lando finishes spinning up the containers we need to scaffold up our Drupal 8 instance by running the composer install command within the terminal window.  However, Lando requires the lando prefix in order to execute other tools so enter the following command within the terminal window.
-
-```
-  lando composer install
-```
+Once Lando finishes spinning up the containers it will automatically scaffold up our Drupal 8 instance by running the composer install command within the terminal window.  Note: anytime we need to install, remove or update modules or depedencies Lando requires the lando prefix in order to execute these commands within the terminal window.
 
 With our Drupal 8 instance now configured we need to import the database.  Located within the db folder is a SQL dump we can use to import into the MySQL container using the `db-import` command.
 
-
 ```
-  cd db
-  lando db-import components.sql.gz
+  lando db-import db/components.sql.gz
 ```
 
-Our database is now imported and all that is left to do is to configure our theme and scaffold up our Pattern Lab instance and compile the Sass files need for our theme.  We can easily do that by entering the following command within the terminal window..
+Our database is now imported and all that is left to do is to configure our theme and scaffold up our Pattern Lab instance and compile the Sass files needed for our theme.  We can easily do that by entering the following commands within the terminal window..
 
 ```
-  cd ..
   cd web/themes/copycat
   lando npm install
   lando gulp
