@@ -3,6 +3,12 @@ recipe: pantheon
 config:
   framework: drupal8
 
+events:
+  post-start:
+    - appserver: composer install
+  post-db-import:
+    - appserver: drush cr
+
 services:
   appserver:
     run_as_root:
