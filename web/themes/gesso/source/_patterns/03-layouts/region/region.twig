@@ -1,11 +1,11 @@
 <div class="l-{{ region_name ?: 'region' }}">
-  {% if has_constrain %}
-    <div class="l-constrain {{ constrain_modifier_classes }}">
+  {% if constrain %}
+    <div class="{{ constrain }}">
   {% endif %}
   {% block content %}
     Region Content
   {% endblock %}
-  {% if has_constrain %}
+  {% if constrain %}
     </div>
   {% endif %}
 </div>
