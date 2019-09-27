@@ -52,7 +52,7 @@ regions:
   content: Content
   postscript: Postscript
   footer: Footer
-  disabled: Disabled
+  hidden: Hidden
   page_bottom: 'Page bottom'
 
 component-libraries:
@@ -71,3 +71,6 @@ component-libraries:
   macros:
     paths:
       - source/_macros
+  images:
+    paths:
+      - images

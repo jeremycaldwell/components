@@ -1,6 +1,6 @@
 ---
 el: .l-breadcrumb
-title: Breadcrumb Layout
+title: Breadcrumb
 ---
 _Layout for Breadcrumb Region_
 

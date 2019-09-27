@@ -19,7 +19,7 @@ services:
 tooling:
   npm:
     service: appserver
-    cmd: cd /app/web/themes/copycat && npm
+    cmd: cd /app/web/themes/gesso && npm
   gulp:
     service: appserver
-    cmd: cd /app/web/themes/copycat && gulp
+    cmd: cd /app/web/themes/gesso && gulp
