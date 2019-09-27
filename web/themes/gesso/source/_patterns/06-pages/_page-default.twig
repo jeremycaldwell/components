@@ -2,7 +2,7 @@
   {% block content %}
 
     {% embed '@layouts/header/header.twig' with {
-      'has_constrain': true
+      'constrain': 'l-constrain'
     } %}
       {% block content %}
         {% include '@components/menus/menu.twig' with {
