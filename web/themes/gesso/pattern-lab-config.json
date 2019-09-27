@@ -21,30 +21,9 @@
     "tools-docs": false
   },
   "ishViewportRange": {
-    "s": [
-      240,
-      500,
-      240,
-      500,
-      240,
-      500
-    ],
-    "m": [
-      500,
-      800,
-      500,
-      800,
-      500,
-      800
-    ],
-    "l": [
-      800,
-      2600,
-      800,
-      2600,
-      800,
-      2600
-    ]
+    "s": [240, 500],
+    "m": [500, 800],
+    "l": [800, 2600]
   },
   "logLevel": "info",
   "outputFileSuffixes": {
@@ -81,17 +60,7 @@
     }
   },
   "patternExtension": "twig",
-  "patternStateCascade": [
-    "inprogress",
-    "inreview",
-    "complete",
-    "inprogress",
-    "inreview",
-    "complete",
-    "inprogress",
-    "inreview",
-    "complete"
-  ],
+  "patternStateCascade": ["inprogress","inreview","complete"],
   "patternExportDirectory": "./pattern-lab/pattern_exports/",
   "patternExportPatternPartials": [],
   "serverOptions": {
@@ -112,20 +81,6 @@
       "excludedPatternStates": [],
       "excludedTags": []
     },
-    {
-      "name": "uikit-workshop",
-      "outputDir": "",
-      "enabled": true,
-      "excludedPatternStates": [],
-      "excludedTags": []
-    },
-    {
-      "name": "uikit-workshop",
-      "outputDir": "",
-      "enabled": true,
-      "excludedPatternStates": [],
-      "excludedTags": []
-    }
   ],
   "engines": {
     "twig": {
