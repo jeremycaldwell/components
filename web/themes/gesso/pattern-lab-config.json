@@ -80,7 +80,7 @@
       "enabled": true,
       "excludedPatternStates": [],
       "excludedTags": []
-    },
+    }
   ],
   "engines": {
     "twig": {

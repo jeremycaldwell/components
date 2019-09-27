@@ -105,7 +105,7 @@ const watchFiles = () => {
   );
   watch(
     [
-      'source/**/*.{twig,json,yaml,yml}',
+      'source/**/*.{twig,json,yaml,yml,md}',
       '!source/_patterns/00-config/config.design-tokens.yml'
     ],
     { usePolling: true, interval: 1500 },
