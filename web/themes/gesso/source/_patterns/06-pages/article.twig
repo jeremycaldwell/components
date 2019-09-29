@@ -1,15 +1,30 @@
-{% set page_content %}
+{% embed '@layouts/page/page.twig' %}
+  {% block header %}
+    {% include '@layouts/header/header.twig' with {
+      'constrain': 'l-constrain'
+    } %}
+  {% endblock %}
 
-  {# include article template #}
-  {% include '@templates/article.twig' with {
-    'article_title': title,
-    'article_content': content,
-    'article_has_footer': true
-  } %}
+  {% block main %}
+    {% include '@layouts/region/region.twig' with {
+      'constrain': 'l-constrain',
+      'region_name': 'highlighted',
+      'content': 'Highlighted Content'
+    } %}
+    {% include '@layouts/breadcrumb/breadcrumb.twig' with {
+      'constrain': 'l-constrain',
+    } %}
+    {% include '@templates/article.twig' with {
+      'article_constrain': article_constrain,
+      'article_title': article_title,
+      'article_footer': article_footer,
+      'article_content': article_content
+    } %}
+  {% endblock %}
 
-{% endset %}
-
-{# pass page_content to default page wrapper #}
-{% include '@pages/_page-default.twig' with {
-  'content': page_content
-} %}
+  {% block footer %}
+    {% include '@layouts/footer/footer.twig' with {
+      'constrain': 'l-constrain'
+    } %}
+  {% endblock %}
+{% endembed %}

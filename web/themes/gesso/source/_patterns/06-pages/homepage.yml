@@ -1,5 +1,6 @@
 ---
 body_class: 'front'
+homepage_constrain: 'l-constrain'
 hero_image: 'https://picsum.photos/1600/800/?image=96&gravity=north'
 hero_title: "Where'd You Get The Coconuts?"
 hero_summary: |-
@@ -10,7 +11,7 @@ hero_summary: |-
   grip it by the husk!</p>
 hero_button_text: 'Ni! Ni! Ni! Ni!'
 hero_button_url: '#'
-grid_title: "You Don't Vote For Kings"
+homepage_grid_title: "You Don't Vote For Kings"
 grid_cards:
   - title: "It's Only a Model"
     url: '#'

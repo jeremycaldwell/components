@@ -1,16 +1,16 @@
 {% embed '@layouts/sidebar/sidebar.twig' with {
-  'constrain': page_constrain,
+  'constrain': landing_constrain,
   'header': false,
   'aside': false
 } %}
 
   {% block main %}
     {% include '@components/page-title/page-title.twig' with {
-      'title': page_title
+      'title': landing_title
     } %}
     {% include '@layouts/section/section.twig' with {
       'title': false,
-      'content': page_content
+      'content': landing_content
     } %}
   {% endblock %}
 

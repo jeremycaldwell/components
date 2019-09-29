@@ -1,7 +1,8 @@
 ---
 body_class: 'not-front node-page node-page--node-type-page'
-title: 'Look, I Can Take You As Far As Anchorhead'
-content: |-
+page_constrain: 'l-constrain'
+page_title: 'Look, I Can Take You As Far As Anchorhead'
+page_content: |-
   <p>Alderaan? I'm not going to Alderaan. I've got to go home.
   It's late, I'm in for it as it is. Still, <a href="#">she's got a lot of
   spirit</a>. I don't know, what do you think? Partially, but it also obeys

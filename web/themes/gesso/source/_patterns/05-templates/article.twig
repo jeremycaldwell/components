@@ -1,5 +1,15 @@
-{% include '@components/article/article.twig' with {
-  'article_page_title': article_title,
-  'has_footer': article_has_footer,
-  'content': article_content
+{% embed '@layouts/sidebar/sidebar.twig' with {
+  'constrain': article_constrain,
+  'header': false,
+  'aside': false
 } %}
+
+  {% block main %}
+    {% include '@components/article/article.twig' with {
+      'article_title': article_title,
+      'article_footer': article_footer,
+      'content': article_content
+    } %}
+  {% endblock %}
+
+{% endembed %}

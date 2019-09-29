@@ -1,6 +1,7 @@
 ---
 body_class: 'not-front'
-title: 'Great Scott!'
+landing_constrain: 'l-constrain'
+landing_title: 'Great Scott!'
 grid_cards:
   - title: 'Delorean'
     url: '#'
