@@ -1,0 +1,84 @@
+// @file
+// Styles for Views Exposed Form.
+
+.views-exposed-form,
+form[id^="views-exposed-form-"] {
+  align-items: center;
+  display: flex;
+  margin-bottom: 0;
+  position: relative;
+
+  .form-item {
+    margin: 0;
+    width: 100%;
+  }
+
+  .form-item--textfield {
+    width: 100%;
+  }
+
+  .form-item__label {
+    @include visually-hidden;
+  }
+
+  .form-item__text {
+    height: 33px;
+    margin: 0;
+    padding: 0.5em 0.4375em;
+    width: 100%;
+
+    &:focus {
+      outline: -webkit-focus-ring-color auto 5px;
+    }
+
+    &::placeholder {
+      color: gesso-color(form, border);
+      opacity: 1;
+    }
+
+    .l-header & {
+      border-color: gesso-color(ui, generic, accent-dark);
+    }
+
+  }
+
+  .form-actions {
+    align-items: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+
+  input[type="submit"] {
+    @include image-replace-alt(43px,33px);
+    @include svg-background('mobile-search');
+    background-color: gesso-color(background, site);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid gesso-color(form, border);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 3px;
+    border-left: 1px none gesso-color(background, site);
+    border-top-left-radius: 0;
+    border-top-right-radius: 3px;
+    cursor: pointer;
+    margin: 0;
+    margin-left: -1px;
+
+    &:hover {
+      background-color: gesso-color(form, border);
+      border-bottom-color: gesso-color(form, border);
+      border-right-color: gesso-color(form, border);
+    }
+  }
+
+  .l-header & {
+    display: none;
+
+    @include breakpoint(gesso-breakpoint(md)) {
+      display: flex;
+      max-width: 225px;
+    }
+  }
+}

@@ -44,6 +44,7 @@ function gesso_theme_suggestions_container_alter(array &$suggestions, array $var
   $exclude_views = [
     // 'example_view_machine_name',
   ];
+
   if (isset($variables['element']['#name'])) {
     if (in_array($variables['element']['#name'], $exclude_views)) {
       $suggestions[] = 'container__no_wrapper';

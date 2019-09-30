@@ -3,11 +3,11 @@
 } %}
 
 {% if title %}
-  <{{ title_element ?: 'h3' }}>{{ title }}</{{ title_element ?: 'h3' }}>
+  <{{ heading ?: 'h3' }}>{{ title }}</{{ heading ?: 'h3' }}>
 {% endif %}
 
 {% for row in rows %}
-  {% if has_wrapper %}
+  {% if wrapper %}
     <{{ element ?: 'div' }} {{ add_attributes(additional_row_attributes) }}>
       {{ row.content }}
     </{{ element ?: 'div' }}>
