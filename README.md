@@ -90,17 +90,16 @@ With our Drupal 8 instance now configured we need to import the database.  Locat
 Our database is now imported and all that is left to do is to configure our theme and scaffold up our Pattern Lab instance and compile the Sass files needed for our theme.  We can easily do that by entering the following commands within the terminal window..
 
 ```
-  cd web/themes/copycat
   lando npm install
   lando gulp
 ```
 
-Now that our theme is no installed and configured we can preview our Drupal 8 website by either selecting the URL within the terminal window or by opening a browser and navigating to http://components.lndo.site/user and logging in with the following credentials:
+Now that our theme is installed and configured we can preview our Drupal 8 website by either selecting the URL within the terminal window or by opening a browser and navigating to http://components.lndo.site/user and logging in with the following credentials:
 
 - username: **admin**
 - password: **admin**
 
 ## Congratulations
-We now have a Drupal 8 project titled Pacific Whale Conservancy that we will be using throughout the remaining training. This Drupal 8 instance is configured with the latest best practices in mind for site building. This includes use of the Media module, Paragraphs, various Twig modules and the Component libraries modules.
+We now have a Drupal 8 project with the Gesso theme enabled that we will be using throughout the remaining training. This Drupal 8 instance is configured with the latest best practices in mind for site building. This includes use of the Media module, Paragraphs, various Twig modules and the Component libraries modules.
 
 This training does not cover site building but we will briefly discuss various decision made when implementing a component-based theme using Twig and Pattern Lab.
