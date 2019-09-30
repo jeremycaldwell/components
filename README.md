@@ -102,4 +102,7 @@ Now that our theme is installed and configured we can preview our Drupal 8 websi
 ## Congratulations
 We now have a Drupal 8 project with the Gesso theme enabled that we will be using throughout the remaining training. This Drupal 8 instance is configured with the latest best practices in mind for site building. This includes use of the Media module, Paragraphs, various Twig modules and the Component libraries modules.
 
+Drupal 8 URL: http://components.lndo.site
+Pattern Lab URL: http://components.lndo.site/themes/gesso/patter-lab
+
 This training does not cover site building but we will briefly discuss various decision made when implementing a component-based theme using Twig and Pattern Lab.
