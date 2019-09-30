@@ -44,13 +44,8 @@ ckeditor_stylesheets:
 regions:
   page_top: 'Page top'
   header: Header
-  navigation: Navigation
-  breadcrumb: Breadcrumb
-  help: Help
   highlighted: Highlighted
-  preface: Preface
   content: Content
-  postscript: Postscript
   footer: Footer
   hidden: Hidden
   page_bottom: 'Page bottom'

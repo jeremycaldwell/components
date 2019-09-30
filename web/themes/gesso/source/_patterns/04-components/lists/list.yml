@@ -1,5 +1,5 @@
 ---
-modifier_classes: ''
+modifier: ''
 list:
   -
     text: 'List Item One'

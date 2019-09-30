@@ -1,5 +1,5 @@
 ---
-modifier_classes: 'list--column'
+modifier: 'list--column'
 list:
   -
     text: 'List Item One'

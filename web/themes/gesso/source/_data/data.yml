@@ -26,26 +26,3 @@ img:
     alt: 'Hero 2:1'
     height: '800'
     width: '1600'
-year:
-  long: '2016'
-  short: '16'
-month:
-  long: 'September'
-  short: 'Sep'
-  digit: '09'
-weekday:
-  long: 'Wednesday'
-  short: 'Wed'
-day:
-  long: '28'
-  short: '28'
-  ordinal: 'th'
-hour:
-  long: '01'
-  short: '1'
-  military: '13'
-  ampm: 'pm'
-minute:
-  long: '20'
-  short: '20'
-seconds: '31'

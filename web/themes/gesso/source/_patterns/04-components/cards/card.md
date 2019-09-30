@@ -5,7 +5,7 @@ title: Card
 _Component for Card_
 
 ### Variables:
-* modifier_classes: [string] Classes to modify the default component styling.
+* modifier: [string] Classes to modify the default component styling.
 * title: [string] card title
 * url: [string] url string for card link.
 * date: [string] card date

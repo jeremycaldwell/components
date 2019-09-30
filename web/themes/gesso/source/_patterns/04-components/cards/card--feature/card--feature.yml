@@ -1,5 +1,5 @@
 ---
-modifier_classes: 'card--feature'
+modifier: 'card--feature'
 title: 'Card title'
 url: '#'
 footer: ''

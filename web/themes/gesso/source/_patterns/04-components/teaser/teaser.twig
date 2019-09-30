@@ -1,3 +1,9 @@
+{% set date %}
+  {% include '@components/date/date.twig' with {
+    'format': 'medium-date'
+  } %}
+{% endset %}
+
 <article class="teaser" role="article">
   <h2><a href="{{ url }}">{{ title }}</a></h2>
   {{ date }}

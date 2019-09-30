@@ -1,5 +1,5 @@
 ---
-modifier_classes: 'list--inline'
+modifier: 'list--inline'
 list:
   -
     text: 'List Item One'

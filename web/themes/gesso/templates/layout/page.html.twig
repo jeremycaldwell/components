@@ -35,25 +35,13 @@
   */
 #}
 
-{% extends '@layouts/site-container/site-container.twig' %}
-  {% block content %}
+{% set main %}
+  {{ page.highlighted }}
+  {{ page.content }}
+{% endset %}
 
-    {{ page.header }}
-
-    {{ page.navigation }}
-
-    {{ page.breadcrumb }}
-
-    {{ page.highlighted }}
-
-    {{ page.help }}
-
-    <main id="main" class="main" role="main" tabindex="-1">
-      {{ page.preface }}
-      {{ page.content }}
-      {{ page.postscript }}
-    </main>
-
-    {{ page.footer }}
-
-  {% endblock %}
+{% include '@layouts/page/page.twig' with {
+  'header': page.header,
+  'main': main,
+  'footer': page.footer
+} %}

@@ -32,9 +32,9 @@
 {% set attributes = attributes.addClass(classes) %}
 
 {% embed '@components/block/block.twig' with {
-  'hide_wrapper': true,
-  'has_constrain': false,
-  'hide_content_wrapper': true,
+  'wrapper': false,
+  'constrain': '',
+  'content_wrapper': false,
   'label': false
 } %}
 

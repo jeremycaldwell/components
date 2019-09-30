@@ -10,6 +10,7 @@
 {% set attributes = attributes.addClass(classes) %}
 
 {% include '@templates/page.twig' with {
+  'page_constrain': 'l-constrain',
   'page_title': label,
   'page_content': content
 } %}

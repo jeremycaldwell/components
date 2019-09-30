@@ -1,5 +1,5 @@
 ---
-modifier_classes: false
+modifier: false
 has_overlay: true
 hero_image: 'https://picsum.photos/1600/800?image=11'
 hero_image_alt: 'alt text'

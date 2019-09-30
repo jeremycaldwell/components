@@ -1,28 +1,30 @@
 {% set additional_attributes = {
   'class': ['block'],
 } %}
+
 {% set additional_title_attributes = {
   'class': ['block__title'],
 } %}
+
 {% set additional_content_attributes = {
   'class': ['block__content'],
 } %}
 
-{% if not hide_wrapper %}
+{% if wrapper %}
   <div {{ add_attributes(additional_attributes) }}>
 {% endif %}
 
-  {% if has_constrain %}
-    <div class="l-constrain {{ constrain_modifier_classes }}">
+  {% if constrain %}
+    <div class="{{ constrain }}">
   {% endif %}
 
   {% if label %}
     {{ title_prefix }}
-    <{{ label_element ?: 'h2' }} {{ add_attributes(additional_title_attributes, 'title_attributes') }}>{{ label }}</{{ label_element ?: 'h2' }}>
+    <{{ heading ?: 'h2' }} {{ add_attributes(additional_title_attributes, 'title_attributes') }}>{{ label }}</{{ heading ?: 'h2' }}>
     {{ title_suffix }}
   {% endif %}
 
-  {% if not hide_content_wrapper %}
+  {% if content_wrapper %}
     <div {{ add_attributes(additional_content_attributes, 'content_attributes') }}>
   {% endif %}
 
@@ -30,14 +32,14 @@
     {{ content }}
   {% endblock %}
 
-  {% if not hide_content_wrapper %}
+  {% if content_wrapper %}
     </div>
   {% endif %}
 
-  {% if has_constrain %}
+  {% if constrain %}
     </div>
   {% endif %}
 
-{% if not hide_wrapper %}
+{% if wrapper %}
   </div>
 {% endif %}

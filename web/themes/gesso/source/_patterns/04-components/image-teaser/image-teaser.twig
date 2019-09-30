@@ -1,3 +1,9 @@
+{% set date %}
+  {% include '@components/date/date.twig' with {
+    'format': 'medium-date'
+  } %}
+{% endset %}
+
 <article class="image-teaser" role="article">
   <div class="l-media">
     {% if image %}
@@ -6,9 +12,11 @@
       </div>
     {% endif %}
     <div class="l-media__content">
-      <h2><a href="{{ url }}">{{ title }}</a></h2>
-      {{ date }}
-      {{ summary }}
+      {% block content %}
+        <h2><a href="{{ url }}">{{ title }}</a></h2>
+        {{ date }}
+        {{ summary }}
+      {% endblock %}
     </div>
   </div>
 </article>

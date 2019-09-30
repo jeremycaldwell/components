@@ -1,8 +1,8 @@
-{% macro readmore(url, title, label = "Read more", description_prefix = "about" ) %}
+{% macro readmore(url, title, label = "Read more", description = "about" ) %}
   {% include '@components/readmore-link/readmore-link.twig' with {
     'url': url,
     'label': label,
-    'description_prefix': description_prefix,
+    'description': description,
     'title': title
   } %}
 {% endmacro %}
