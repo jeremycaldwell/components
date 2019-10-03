@@ -1,0 +1,12 @@
+{% embed '@layouts/section/section.twig' with {
+  'constrain': 'l-constrain',
+  'title': content.field_heading|field_value
+}%}
+
+  {% block content %}
+    {% include '@layouts/grids/grid.twig' with {
+      'modifier': 'l-grid--2col',
+      'content': content.field_featured|field_value
+    }%}
+  {% endblock %}
+{% endembed %}
