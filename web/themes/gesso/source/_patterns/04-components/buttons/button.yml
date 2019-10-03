@@ -4,3 +4,4 @@ disabled: false
 url: '#'
 text: 'Button Text'
 modifier: ''
+target: ''

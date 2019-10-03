@@ -1,3 +1,20 @@
+{% set homepage_grid_content %}
+  {% include '@components/cards/card.twig' with {
+    title: 'Card title',
+    url: '#',
+    footer: '',
+    date: 'September 28, 2018',
+    read_more: true,
+  }%}
+  {% include '@components/cards/card.twig' with {
+    title: 'Card title',
+    url: '#',
+    footer: '',
+    date: 'September 28, 2018',
+    read_more: true,
+  }%}
+{% endset %}
+
 {% set homepage_grid %}
   {% include '@layouts/grids/grid.twig' with {
     'modifier': 'l-grid--2col',
